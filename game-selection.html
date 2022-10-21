@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Grok | Giis</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="icon" type="text/css" href="images/Favicon-Grok.png">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+	  rel="stylesheet"/>
+	 <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/5.0.0/mdb.min.css"
+	  rel="stylesheet"/>
+	 <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Graduate&display=swap" rel="stylesheet">
+     
+</head>
+<script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "e6dep7pbek");
+</script>
+<style type="text/css">
+	.home-title{
+	font-family: 'Graduate', cursive!important;
+	color: #fac710!important;
+	font-size: 60px;
+}
+.protocol_alpha{
+  width: 250px;
+  height: 120px;
+  background: #ebcb5f;
+   line-height: 120px!important;
+   font-family: 'Graduate', cursive!important;
+   cursor: pointer;
+   
+}
+.botcity{
+	 width: 250px;
+  height: 120px;
+  background: #595b66;
+  margin-left: 20px;
+  line-height: 120px!important;
+  font-family: 'Graduate', cursive!important;
+  cursor: no-drop;
+
+}
+
+.card-1 {
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+.card-1:hover {
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+</style>
+<body>
+
+
+<div class="container">
+	<div class="row">
+		<div class="col-12">
+			<div class="" style="margin-top:10%;">
+				<center><h3 class="home-title">SELECT GAME</h3></center>
+			</div>	
+		</div>
+	</div>
+<center>	
+	<div class="" style="display: inline-flex;margin-top: 50px;">
+		<div class="protocol_alpha card-1">
+			<h4 style="margin-top: 13%;">PROTOCOL<br> ALPHA</h4>
+		</div>
+		<div class="botcity card-1">
+			<h4 style="margin-top: 13%;"><span style="color: #f2c947;">BOTCITY</span><br>
+             <span style="color: #7e7e7f;">[LOCKED]</span></h4>
+		</div>
+	</div>
+</center>
+</div>
+
+
+    
+</body>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/5.0.0/mdb.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+</html>
+<script type="text/javascript">
+
+
+	$('.protocol_alpha').click(function(){
+		var get_url = window.location.search; 
+		location.href="game-story"+get_url;
+	})
+</script>

@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Grok | Giis</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="icon" type="text/css" href="images/Favicon-Grok.png">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+	  rel="stylesheet"/>
+	 <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/5.0.0/mdb.min.css"
+	  rel="stylesheet"/>
+	 <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Graduate&display=swap" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;600;700&display=swap" rel="stylesheet">
+
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/16.0.8/css/intlTelInput.css" />
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/16.0.8/js/intlTelInput-jquery.min.js"></script>
+    <link  rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css" />
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+   <script src="https://kit.fontawesome.com/d4d2bfc001.js" crossorigin="anonymous"></script>
+</head>
+<script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "e6dep7pbek");
+</script>
+<style type="text/css">
+	.sign-up-box{
+	width: 100%;
+	height: 600px;
+	background: white;
+	margin-top: 10%;
+	border-radius: 10px;
+}
+	.error{
+		border: 2px solid red!important;
+	}
+	.error:focus{
+		outline: none!important;		
+	}
+	.error-message{
+		color: red;
+		font-size: 14px;
+		text-align: left;
+		margin-top: 10px;
+		display: none;
+	}
+	.signup-btn-after{
+		margin-top: -20px;
+	}
+	.error-name{
+		float: left;
+		margin-left: 25px;
+		margin-top: 5px;
+		margin-bottom: 5px;
+		color: red;
+	}
+	.er-name{
+		display: none;
+	}
+	.er-school{
+		display: none;
+	}
+	.er-grade{
+		display: none;
+	}
+	.er-par-email{
+		display: none;
+	}
+	.er-par-email-in{
+		display: none;
+	}
+	.er-par-mobile{
+		display: none;
+	}
+	.er-par-mobile-invalid{
+		display: none;
+	}
+</style>
+<body>
+
+
+
+
+
+
+<div class="container">
+<div class="row">
+	<div class="col-md-1">
+		
+	</div>
+  <div class="col-md-6">
+  			<div class="welcome-text-div">
+				<h3 class="home-title">WELCOME!!</h3>
+			</div>	
+			<div>
+				<h4 class="sub-title">Please sign up to participate <br>in the competetion!</h4>
+			</div>	
+			<div class="logo-div">				
+				 <img class="logo-giis" src="images/giis_logo.png">
+				 <img style="margin-top: -10px;margin-left: 20px;" class="logo-giis" src="images/grok_logo.png">
+			</div>
+
+  </div>
+  <div class="col-md-5">
+  					<div class="sign-up-box"><br>
+				<h3 class="sign-up-title">Sign up</h3>
+				<center>
+				<input type="text" class="text-input form-control name" name="" placeholder="Enter your full name">
+				<span class="error-name er-name"><i class="fa-solid fa-circle-xmark"></i> Enter your Name</span>
+				<input type="text" class="text-input form-control school_name" name="" placeholder="Enter school name">
+				<span class="error-name er-school"><i class="fa-solid fa-circle-xmark"></i> Enter School Name</span>
+				<!-- <select class="text-input form-control grade">
+					<option value="null">Select Grade</option>
+					<option value="3">3 Grade</option>
+					<option value="4">4 Grade</option>
+					<option value="5">5 Grade</option>
+					<option value="6">6 Grade</option>
+					<option value="7">7 Grade</option>
+					<option value="8">8 Grade</option>
+					<option value="9">9 Grade</option>
+					<option value="10">10 Grade</option>
+					<option value="11">11 Grade</option>
+					<option value="12">12 Grade</option>
+				</select> -->
+
+				<select style="padding-left: 5px;color: grey!important;" class="browser-default custom-select text-input grade">
+               <option value="null">Select Grade</option>
+					<option value="3">3 Grade</option>
+					<option value="4">4 Grade</option>
+					<option value="5">5 Grade</option>
+					<option value="6">6 Grade</option>
+					<option value="7">7 Grade</option>
+					<option value="8">8 Grade</option>
+					<option value="9">9 Grade</option>
+					<option value="10">10 Grade</option>
+					<option value="11">11 Grade</option>
+					<option value="12">12 Grade</option>
+</select>
+				<span class="error-name er-grade"><i class="fa-solid fa-circle-xmark"></i> Select Grade</span>
+
+				<input type="text" class="text-input form-control parents_email" name="" placeholder="Enter parents email address">
+
+				<span class="error-name er-par-email"><i class="fa-solid fa-circle-xmark"></i> Enter parents Email</span>
+				<span class="error-name er-par-email-in"><i class="fa-solid fa-circle-xmark"></i> Invalid Email</span>
+
+				<input type="text" class="text-input form-control parent_mobile" id="mobile_number" name="" placeholder="Enter parents mobile number" onkeypress='validate(event)' maxlength="10">	
+				<div class="row">
+					<div class="col-12">
+						<span class="error-name er-par-mobile"><i class="fa-solid fa-circle-xmark"></i> Enter parents Mobile</span>
+						<span class="error-name er-par-mobile-invalid"><i class="fa-solid fa-circle-xmark"></i> Enter 10 Digit Mobile number</span>
+					</div>
+				</div>	
+				<div style="margin-top: 20px;margin-left: 12px;" class="row mb-5">
+				    <div class="col d-flex">     
+				      <div class="form-check">
+				        <input class="form-check-input" type="checkbox" value="" id="terms_and_conditions"  />
+				        <label class="form-check-label" for=""> I agree <a class="terms-condition-text" href="terms-and-conditions.html" target="_blank"><b>T&C</b></a>, and <a class="terms-condition-text" href="privacy-policy.html" target="_blank"><b>Privacy Policy</b></a> </label>
+				      </div>
+				    </div>	
+
+				    <h6 class="error-message"><i class="fa-solid fa-circle-xmark"></i> Please read and agree to the Terms and Conditions and Privacy <br>Policy by checking the box.</h6>			   
+				  </div>
+				  <button class="signup-btn btn submit-form">Sign Up</button>
+			</center>
+			</div>
+       <br><br><br>
+  </div>
+</div>
+</div>
+
+    
+</body>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/5.0.0/mdb.min.js"></script>
+</html>
+<script type="text/javascript">
+	
+
+        $(function () {       
+
+
+           
+
+           if (localStorage.getItem('signup') !== null) {
+		    // localStorage.setItem('Products', JSON.stringify(obj));
+		    //console.log("Exist");
+		    var data = JSON.parse(localStorage.getItem("signup"));	      
+
+		    var full_name = data[0];
+		    var school_name = data[1]; 
+		    var grade = data[2];
+		    var parent_email = data[3];
+		    var parent_mobile = data[4];
+		    var country_code = data[5];
+		    var country_name = data[6];
+		    var full_mobile = data[7];
+
+		    $('.name').val(full_name);	
+		    $('.school_name').val(school_name);
+		    $('.grade').val(grade);
+		    $('.parents_email').val(parent_email);
+		    $('.parent_mobile').val(parent_mobile);
+		     var code = $('#mobile_number').val("+"+country_code);
+
+		   }
+		   else{
+		   	console.log("Not Exist");
+		   	 var code = $('#mobile_number').val("+971");
+		   }
+
+
+            $('#mobile_number').intlTelInput({
+                autoHideDialCode: true,
+                autoPlaceholder: "ON",
+                dropdownContainer: document.body,
+                formatOnDisplay: true,
+                hiddenInput: "full_number",
+                initialCountry: "auto",
+                nationalMode: true,
+                placeholderNumberType: "MOBILE",
+                preferredCountries: ['US'],
+                separateDialCode: true
+            });
+              $('.submit-form').on('click', function () {
+
+            	var country_code = $(".parent_mobile").intlTelInput("getSelectedCountryData").dialCode;
+                var mobile_number = $('.parent_mobile').val();
+                var country_name = $(".parent_mobile").intlTelInput("getSelectedCountryData").name;
+                var mobile_number_full = country_code+mobile_number;
+                 var submitURL = 'https://api.airtable.com/v0/appBK5C28IKY7ZBjJ/Table 1?api_key=keyFrA9NNLKNzZKEF';
+
+            	//location.href="game-selection.html";
+            	var full_name = $('.name').val();
+            	var school_name = $('.school_name').val();
+            	var grade = $('.grade').val();
+            	var parent_email = $('.parents_email').val();
+            	var parent_mobile = $('.parent_mobile').val();
+
+			     if (full_name == '') {
+			     	$('.name').addClass("error");
+			     	$('.er-name').show();
+			     }
+			     else{
+			     	$('.name').removeClass("error");
+			     	$('.er-name').hide();
+
+			     	if (school_name == '') {
+			     		$('.school_name').addClass("error");
+			     		$('.er-school').show();
+			     		
+			     	}
+			     	else{
+			     		$('.school_name').removeClass("error");
+			     		$('.er-school').hide();
+
+			     		if (grade == 'null') {
+			     			$('.grade').addClass("error");
+			     			$('.er-grade').show();
+			     		}
+			     		else{
+			     			$('.grade').removeClass("error");
+			     			$('.er-grade').hide();
+
+			     			if (parent_email == '') {
+			     				$('.parents_email').addClass("error");
+			     				$('.er-par-email').show();
+			     			}
+			     			else{
+			     				$('.er-par-email').hide();
+			     				 if(IsEmail(parent_email)==false){
+					               $('.parents_email').addClass("error");
+					               $('.er-par-email-in').show();
+					                return false;
+					            }
+					            else{
+					            $('.er-par-email-in').hide();
+			     				$('.parents_email').removeClass("error");
+			     				if (parent_mobile == '') {
+			     					$('.parent_mobile').addClass("error");
+			     					$('.er-par-mobile').show();
+			     				}
+			     				else{
+			     					$('.parent_mobile').removeClass("error");
+			     					$('.er-par-mobile').hide();
+
+
+
+			     						if (parent_mobile.length < 10) {
+			     							$('.er-par-mobile-invalid').show();
+			     						}
+			     						else{
+
+			     							$('.er-par-mobile-invalid').hide();
+
+			     					  if($('#terms_and_conditions').not(':checked').length){
+								         //alert('Please Agree terms and condition');
+								         $('.error-message').show();
+								         $('.signup-btn').addClass("signup-btn-after");
+
+								      }
+								      else{
+								         //alert('Checked');
+								         $('.error-message').hide();
+								         $('.signup-btn').removeClass("signup-btn-after");
+
+								         var signup = [full_name, school_name, grade, parent_email, parent_mobile, country_code, country_name, mobile_number_full];
+								         localStorage.setItem('signup', JSON.stringify(signup));
+
+
+								         // $.ajax({
+								         // 	url:'php/insert.php',
+								         // 	method:'POST',
+								         // 	data:{full_name:full_name, school_name:school_name, grade:grade, p_email:parent_email, p_mobile:mobile_number_full},
+								         // 	success:function(data){
+								         // 		console.log(data);
+								         // 	}
+								         // })
+
+
+										     var data = {
+										      "fields": {         
+										      "Name": full_name,
+										      "School Name": school_name,
+										      "Grade": grade,
+										      "Parents Email": parent_email,
+										      "Mobile": mobile_number_full
+
+										      
+										      }
+										     };
+							            $.post(submitURL, data, function(data){
+							                 //$('#submit-message').text('Submitted!!!!');
+							                 console.log('success',data);                 
+							               location.href = "game-selection?name="+full_name+"&sn="+school_name+"&g="+grade+"&pe="+parent_email+"&pp="+mobile_number_full+"&tutorial=yes";	
+							              });
+
+
+
+
+
+								         
+
+								      }	
+								     }
+
+			     				   }
+			     				}
+
+			     			}
+			     		}
+			     	}
+			     }
+
+           }); 	
+        });
+
+        function validate(evt) {
+		  var theEvent = evt || window.event;
+
+		  // Handle paste
+		  if (theEvent.type === 'paste') {
+		      key = event.clipboardData.getData('text/plain');
+		  } else {
+		  // Handle key press
+		      var key = theEvent.keyCode || theEvent.which;
+		      key = String.fromCharCode(key);
+		  }
+		  var regex = /[0-9]|\./;
+		  if( !regex.test(key) ) {
+		    theEvent.returnValue = false;
+		    if(theEvent.preventDefault) theEvent.preventDefault();
+		  }
+		}
+
+		function IsEmail(email) {
+        var regex = /^([a-zA-Z0-9_\.\-\+])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+        if(!regex.test(email)) {
+           return false;
+        }else{
+           return true;
+        }
+      }
+</script>

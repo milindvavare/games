@@ -1,0 +1,14 @@
+RewriteEngine on  
+  
+RewriteRule ^game-selection  game-selection.html [NC,L]
+RewriteRule ^game-story  game-story.html [NC,L]
+RewriteRule ^story-games2  next_game_story.html [NC,L]
+RewriteRule ^privacy-policy  privacy-policy.html [NC,L]
+RewriteRule ^terms-and-conditions  terms-and-conditions.html [NC,L]
+RewriteRule ^game-screen  game-screen.html [NC,L]
+RewriteRule ^feedback  feedback.html [NC,L]
+RewriteRule ^end-game  end-game.html [NC,L]
+RewriteRule ^help  help.html [NC,L]
+RewriteRule ^error  error.html [NC,L]
+RewriteRule ^sc_feedback  screenfeedback.php [NC,L]
+
