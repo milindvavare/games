@@ -181,10 +181,7 @@
 <script type="text/javascript">
 	
 
-        $(function () {       
-
-
-           
+        $(function () {                 
 
            if (localStorage.getItem('signup') !== null) {
 		    // localStorage.setItem('Products', JSON.stringify(obj));
@@ -232,8 +229,8 @@
                 var mobile_number = $('.parent_mobile').val();
                 var country_name = $(".parent_mobile").intlTelInput("getSelectedCountryData").name;
                 var mobile_number_full = country_code+mobile_number;
-                // var submitURL = 'https://api.airtable.com/v0/appBK5C28IKY7ZBjJ/Table 1?api_key=keyFrA9NNLKNzZKEF';
-                var submitURL = 'https://api.airtable.com/v0/appr2RSEnahzbqsXI/User_details?api_key=keyTFl2DqJd1CEAIx';
+                 var submitURL = 'https://api.airtable.com/v0/appBK5C28IKY7ZBjJ/Table?api_key=keyFrA9NNLKNzZKEF';
+                //var submitURL = 'https://api.airtable.com/v0/appr2RSEnahzbqsXI/User_details?api_key=keyTFl2DqJd1CEAIx';
             	//location.href="game-selection.html";
             	var full_name = $('.name').val();
             	var school_name = $('.school_name').val();
@@ -323,27 +320,28 @@
 
 
 										     var data = {
-										      "fields": {         
+										      "fields": 
+										      {    
+
+										      // "Name": full_name,
+										      // "School Name": school_name,
+										      // "Grade": grade,
+										      // "Parents Email": parent_email,
+										      // "Mobile": mobile_number_full	
 										      "Name": full_name,
 										      "School Name": school_name,
 										      "Grade": grade,
 										      "Parents Email": parent_email,
 										      "Mobile": mobile_number_full
 
-										      
+
 										      }
 										     };
 							            $.post(submitURL, data, function(data){
 							                 //$('#submit-message').text('Submitted!!!!');
 							                 console.log('success',data);                 
 							               location.href = "game-selection?name="+full_name+"&sn="+school_name+"&g="+grade+"&pe="+parent_email+"&pp="+mobile_number_full+"&tutorial=yes";	
-							              });
-
-
-
-
-
-								         
+							              });								         
 
 								      }	
 								     }
